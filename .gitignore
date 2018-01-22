@@ -1,0 +1,13 @@
+build/
+data/
+*.suo
+*.lib
+*.dll
+.vs/
+*.db
+*.opendb
+*.exe
+vs14/3rdparty/glew/**
+!vs14/3rdparty/glew/Readme.md
+vs14/libFindSurface/**
+!vs14/libFindSurface/Readme.md
