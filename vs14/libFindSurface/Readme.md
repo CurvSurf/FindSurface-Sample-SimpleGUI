@@ -3,8 +3,7 @@
 
 1. Download FindSurface SDK library at [here](https://developers.curvsurf.com/downloads.jsp)
 
-2.a. Unzip and put the contents to this directory.
-
+2. Unzip and put the contents to this directory.      
 Make sure that the files are located as follows:
 
 - For 32-bits platforms:
@@ -17,4 +16,4 @@ Make sure that the files are located as follows:
 	- vs14\libFindSurface\lib\x64\FindSurface.dll
 	- vs14\libFindSurface\lib\x64\FindSurface.lib
 
-2.b. Or change the library paths in SimpleGUI project settings (SimpleGUI.vcxproj) into the corresponding paths that your files are located.
+Or change the library paths in SimpleGUI project settings (SimpleGUI.vcxproj) into the corresponding paths that your files are located.
