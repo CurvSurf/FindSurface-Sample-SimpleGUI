@@ -72,28 +72,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)libFindSurface\include;$(SolutionDir)3rdparty\glew\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libFindSurface\lib\win32\x86;$(SolutionDir)3rdparty\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)libFindSurface\lib\x86;$(SolutionDir)3rdparty\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)build\windows\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\windows\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)libFindSurface\include;$(SolutionDir)3rdparty\glew\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libFindSurface\lib\win32\x64;$(SolutionDir)3rdparty\glew\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)libFindSurface\lib\x64;$(SolutionDir)3rdparty\glew\lib\Release\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)build\windows\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\windows\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)libFindSurface\include;$(SolutionDir)3rdparty\glew\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libFindSurface\lib\win32\x86;$(SolutionDir)3rdparty\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)libFindSurface\lib\x86;$(SolutionDir)3rdparty\glew\lib\Release\Win32;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)build\windows\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\windows\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>$(SolutionDir)libFindSurface\include;$(SolutionDir)3rdparty\glew\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)libFindSurface\lib\win32\x64;$(SolutionDir)3rdparty\glew\lib\Release\x64;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(SolutionDir)libFindSurface\lib\x64;$(SolutionDir)3rdparty\glew\lib\Release\x64;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)build\windows\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)build\windows\obj\$(Platform)\$(Configuration)\</IntDir>
   </PropertyGroup>
@@ -112,7 +112,7 @@
       <AdditionalDependencies>FindSurface.lib;glew32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy 3rdparty\glew\bin\$(PlatformName)\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\</Command>
+      <Command>copy 3rdparty\glew\bin\Release\Win32\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ &amp; copy libFindSurface\lib\x86\FindSurface.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -130,7 +130,7 @@
       <AdditionalDependencies>FindSurface.lib;glew32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy 3rdparty\glew\bin\$(PlatformName)\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\</Command>
+      <Command>copy 3rdparty\glew\bin\Release\x64\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ &amp; copy libFindSurface\lib\x64\FindSurface.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -152,7 +152,7 @@
       <AdditionalDependencies>FindSurface.lib;glew32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy 3rdparty\glew\bin\$(PlatformName)\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\</Command>
+      <Command>copy 3rdparty\glew\bin\Release\Win32\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ &amp; copy libFindSurface\lib\x86\FindSurface.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -174,7 +174,7 @@
       <AdditionalDependencies>FindSurface.lib;glew32.lib;OpenGL32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy 3rdparty\glew\bin\$(PlatformName)\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\</Command>
+      <Command>copy 3rdparty\glew\bin\Release\x64\glew32.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ &amp; copy libFindSurface\lib\x64\FindSurface.dll build\windows\bin\$(PlatformName)\$(ConfigurationName)\ </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -29,7 +29,7 @@ Quick Start
 ------------
 
 Once you build the sample code, a demo program will be made and it requires the following command arguments:
-	
+​	
   - accuracy
   - mean-distance
   - touch-radius-step
@@ -48,10 +48,10 @@ Look at the details below and you will be able to assign these arguments and run
 			-a 		accuracy (the default value is 0.003, which represents 3 mm)
 			-d 		mean distance (the default value is 0.01, which represents 10 mm)
 			-s 		touch radius step (the default value is 0.01, which represents 10 mm)
-
+	
 		point-cloud-filename:
 			<filename.xyz> 		it will try to find "sample.xyz", if omitted.
-
+	
 	example 1: SimpleGUI.exe -a 0.002 -s 0.02 -d 0.1 
 
 The example 1 means that the program sets accuracy to 2 mm, mean distance to 100 mm, touch radius step to 20 mm respectively. There are two options which the program will cause a failure:
@@ -64,6 +64,16 @@ The example 1 means that the program sets accuracy to 2 mm, mean distance to 100
 ### Getting Started to develop your own application
 
 Our [developer website](https://developers.curvsurf.com/documentation.jsp) provides detailed instruction on how to develop using FindSurface SDK.
+
+### Sample data used in this sample application
+
+The sample point cloud data used in this simple FindSurface application is captured by the [Google Tango Tablet](https://developers.google.com/tango/hardware/tablet).  
+The captured point cloud data is stored in **sample.xyz** file.
+The scene of sample point cloud data looks like below:
+
+| <img src="Readme.images/sample.jpg" width="480" /> | <img src="Readme.images/sample_pc.jpg" width="480" /> |
+| :--------------------------------------: | :--------------------------------------: |
+|       **Figure 1. Captured Scene**       |        **Figure 2. Point Cloud**         |
 
 
 CONTACT
