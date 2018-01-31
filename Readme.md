@@ -33,10 +33,14 @@ You can download GLEW binaries at [glew.sourceforge.net/](http://glew.sourceforg
 
 This sample requires OpenGL library.
 
+```bash
+sudo apt-get install libgl1-mesa-dev
+```
+
 Install the GCC C compilers and associated tools such as _make_ if they have not been installed.
 
 ```bash
-sudo apt-get install build-essential libgl1-mesa-dev
+sudo apt-get install build-essential
 ```
 
 
