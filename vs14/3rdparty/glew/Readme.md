@@ -6,14 +6,14 @@
 2. Unzip and put the contents to this directory.      
 Make sure that the files are located as follows:
 
-- For 32-bits platforms:
+- For 32-bit platforms:
 	- vs14\3rdparty\glew\bin\Win32\glew32.dll
 	- vs14\3rdparty\glew\include\GL\glew.h
 	- vs14\3rdparty\glew\include\GL\glxew.h
 	- vs14\3rdparty\glew\include\GL\wglew.h
 	- vs14\3rdparty\glew\lib\Win32\glew32.lib\
 
-- For 64-bits platforms:
+- For 64-bit platforms:
 	- vs14\3rdparty\glew\bin\x64\glew32.dll
 	- vs14\3rdparty\glew\include\GL\glew.h
 	- vs14\3rdparty\glew\include\GL\glxew.h
