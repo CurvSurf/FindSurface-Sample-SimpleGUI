@@ -1,4 +1,4 @@
-# FindSurface-Samples / SimpleGUI / libFindSurface / Readme.md
+# FindSurface-Samples / SimpleGUI / glew / Readme.md
 **Curv*Surf* FindSurface™ SDK** Samples - SimpleGUI
 
 1. Download GLEW windows binaries at [here](http://glew.sourceforge.net/).
